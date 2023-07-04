@@ -1,0 +1,35 @@
+body {
+    background-color: #282a36; /*color página */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /* fuente*/
+}
+
+#cards-container { /*color de la especie*/
+    color: #ffffff;
+}
+
+.card { /* diseño de la carta */
+    background-color: #44475a;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.card-img-top { /* imagen en la carta*/ 
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-body { /* tamaño carta */
+    padding: 20px;
+}
+
+.card-title { /* diseño nombre carta */
+    font-family: 'Get Schwifty', cursive;
+    font-size: 2em;
+    color: #50fa7b;
+}
+
+.card-text { /*diseño especie carta */
+    font-size: 1.2em;
+}
+
+
