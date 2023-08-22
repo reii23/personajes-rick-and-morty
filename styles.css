@@ -1,35 +1,75 @@
 body {
-    background-color: #282a36; /*color página */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /* fuente*/
+    background-color: #2a2a2a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#cards-container { /*color de la especie*/
+#cards-container {
     color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card { /* diseño de la carta */
-    background-color: #44475a;
-    border-radius: 20px;
+.card {
+    background-color: #3b3b3b;
+    border-radius: 10px;
     margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-.card-img-top { /* imagen en la carta*/ 
-    height: 350px;
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
     object-fit: cover;
 }
 
-.card-body { /* tamaño carta */
-    padding: 20px;
+.card-body {
+    padding: 15px;
 }
 
-.card-title { /* diseño nombre carta */
+.card-title {
     font-family: 'Get Schwifty', cursive;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #50fa7b;
+    margin-bottom: 10px;
 }
 
-.card-text { /*diseño especie carta */
-    font-size: 1.2em;
+.card-text {
+    font-size: 1.1em;
+    color: #f8f8f8;
+    margin-bottom: 0;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+#search-bar-input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #50fa7b;
+    color: rgb(6, 6, 6);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #1d9d48;
+}
